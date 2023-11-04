@@ -66,3 +66,7 @@ echo $VAR_1
 
 echo $VAR_2
 ```
+
+Note:
+
+Variable names can consist of uppercase letters, lowercase letters, or a combination of both. However, it's essential to maintain consistency in the usage of uppercase and lowercase letters when referencing variables in the case-sensitive environment of Bash.
