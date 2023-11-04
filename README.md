@@ -77,4 +77,17 @@ Placing our content within quotation marks in Bash signifies that the enclosed t
 You can utilize either single quotes ( ' ) or double quotes ( " ):
 
 * Single quotes interpret each character exactly as it appears.
-* Double quotes enable variable substitution, allowing you to include variables within the value setting. 
+* Double quotes enable variable substitution, allowing you to include variables within the value setting.
+
+Example:
+
+```
+NAME='John'
+SURNAME='Doe'
+
+# Single Quote example:
+echo 'Hello my name is $NAME and my surname is $SURNAME'
+
+# Double Quote example:
+echo "Hello my name is $NAME and my surname is $SURNAME"
+```
