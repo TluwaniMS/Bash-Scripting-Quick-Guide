@@ -48,3 +48,21 @@ A variable serves as a temporary container for holding information. Two fundamen
 
 * Assigning a value to a variable.
 * Retrieving the value stored in a variable.
+
+Example:
+
+(Assigning a value to a variable)
+
+```
+VAR_1="The first variable!"
+
+VAR_2="The second variable!"
+```
+
+(Retrieving the value stored in a variable)
+
+```
+echo $VAR_1
+
+echo $VAR_2
+```
