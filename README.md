@@ -19,3 +19,21 @@ In essence, a process stands as a live iteration of a program.
 # What is a Bash Script?
 
 A bash script is a document comprising a set of instructions that the bash program executes sequentially. It empowers you to carry out a sequence of tasks, like changing to a designated directory, generating a directory, and initiating a procedure via the command line.
+
+## Basic example of a bash script:
+
+```
+#!/bin/bash
+# This is a basic Hello World! Bash script.
+
+echo "Welcome to the world of scripting!"
+```
+
+#### To run the script:
+
+* Create a file with a .sh suffix.
+* Copy the code snippet above
+* Grant user(s) permissions to exexute the xcript:
+  `chmod 755 <filename>`
+* Run the script:
+  `./<flename>`
