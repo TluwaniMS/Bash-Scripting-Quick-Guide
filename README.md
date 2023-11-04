@@ -70,3 +70,11 @@ echo $VAR_2
 Note:
 
 Variable names can consist of uppercase letters, lowercase letters, or a combination of both. However, it's essential to maintain consistency in the usage of uppercase and lowercase letters when referencing variables in the case-sensitive environment of Bash.
+
+# Quotes
+
+Placing our content within quotation marks in Bash signifies that the enclosed text should be treated as a unified entity. 
+You can utilize either single quotes ( ' ) or double quotes ( " ):
+
+* Single quotes interpret each character exactly as it appears.
+* Double quotes enable variable substitution, allowing you to include variables within the value setting. 
