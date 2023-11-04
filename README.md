@@ -29,6 +29,10 @@ A bash script is a document comprising a set of instructions that the bash progr
 echo "Welcome to the world of scripting!"
 ```
 
+Note:
+
+The character sequence consisting of a hash and exclamation mark ( #! ) is commonly known as the Shebang. It is followed by the path to the interpreter (or program) intended to execute (or interpret) the remaining lines within the text file.
+
 #### To run the script:
 
 * Create a file with a .sh suffix.
@@ -37,3 +41,10 @@ echo "Welcome to the world of scripting!"
   `chmod 755 <filename>`
 * Run the script:
   `./<flename>`
+
+# Creating a variable.
+
+A variable serves as a temporary container for holding information. Two fundamental operations associated with variables include:
+
+* Assigning a value to a variable.
+* Retrieving the value stored in a variable.
