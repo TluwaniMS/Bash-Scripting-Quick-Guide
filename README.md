@@ -54,9 +54,9 @@ Example:
 (Assigning a value to a variable)
 
 ```
-VAR_1="The first variable!"
+VAR_1='The first variable!'
 
-VAR_2="The second variable!"
+VAR_2='The second variable!'
 ```
 
 (Retrieving the value stored in a variable)
