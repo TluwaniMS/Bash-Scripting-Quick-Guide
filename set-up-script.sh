@@ -2,5 +2,7 @@
 
 for file in $(ls ./bash-practice-scripts)
 do
-    echo $file
+    chmod 755 ./bash-practice-scripts/$file
 done
+
+echo "File permissions have been updated."
