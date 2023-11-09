@@ -246,4 +246,18 @@ do
 done
 ```
 
+Functions
 
+```
+function_name () {
+	<commands>
+}
+```
+
+OR
+
+```
+function function_name {
+	<commands>
+}
+```
