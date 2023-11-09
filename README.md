@@ -194,3 +194,28 @@ fi
 * -s FILE  FILE exists and it's size is greater than zero (ie. it is not empty).
 * -w FILE  FILE exists and the write permission is granted.
 * -x FILE  FILE exists and the execute permission is granted.
+
+### If Else
+
+```
+if [ <some test> ]
+then
+	<commands>
+else
+	<other commands>
+fi
+```
+
+### If Elif Else
+
+```
+if [ <some test> ]
+then
+	<commands>
+elif [ <some test> ]
+then
+	<different commands>
+else
+	<other commands>
+fi
+```
