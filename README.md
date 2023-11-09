@@ -232,3 +232,18 @@ case <variable> in
 	;;
 esac
 ```
+
+# Loops
+
+For loops
+
+For each item within a specified list, execute the provided set of instructions using the following syntax.
+
+```
+for var in <list>
+do
+	<commands>
+done
+```
+
+
