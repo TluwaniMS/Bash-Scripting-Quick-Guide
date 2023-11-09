@@ -118,3 +118,152 @@ To achieve this, we employ the variables `$1` to denote the first command line a
 * $SECONDS - The number of seconds since the script was started.
 * $RANDOM - Returns a different random number each time is it referred to.
 * $LINENO - Returns the current line number in the Bash script.
+
+# User input
+
+If we desire to request input from the user, we utilize a command known as "read." This command accepts the input and stores it in a variable.
+
+e.g 
+
+`read <options> <var_name>`
+
+You have the capability to modify how the read function operates by utilizing a range of command line choices.
+
+Nevertheless, two frequently employed choices are -p, which enables you to designate a prompt, and -s, which ensures that the input is silent.
+
+`read -p “Username: ”<var_name>`
+
+`read -sp “Password: ”<var_name>`
+
+# Let
+
+The "let" command in Bash is a built-in function that enables us to perform basic arithmetic operations.
+
+`let <arithmetic expression>`
+
+e.g
+
+`let <var_name>=x+x`
+
+ OR
+ 
+`let “<var_name> = x + x”`
+
+# Expr
+
+expr is akin to let, but instead of storing the outcome in a variable, it directly displays the answer.
+
+Double Parentheses
+
+`$(( expression ))`
+
+e.g
+
+`<var_name>=$(( x + x ))`
+
+# Getting the length of a variable
+
+If you aim to determine the length of a variable (the number of characters it contains)
+
+`${#variable}`
+
+# Basic `If statements`
+
+An elementary if statement essentially operates by performing a designated set of tasks if a specific condition is determined to be true. Conversely, if the condition is not satisfied, the tasks are not carried out.
+
+```
+if [ <some test> ]
+then
+	<commands>
+fi
+```
+
+### Conditional operators:
+
+* ! EXPRESSION  The EXPRESSION is false.
+* -n STRING  The length of STRING is greater than zero.
+* -z STRING  The lengh of STRING is zero (ie it is empty).
+* STRING1 = STRING2  STRING1 is equal to STRING2
+* STRING1 != STRING2  STRING1 is not equal to STRING2
+* INTEGER1 -eq INTEGER2  INTEGER1 is numerically equal to INTEGER2
+* INTEGER1 -gt INTEGER2  INTEGER1 is numerically greater than INTEGER2
+* INTEGER1 -lt INTEGER2  INTEGER1 is numerically less than INTEGER2
+* -d FILE  FILE exists and is a directory.
+* -e FILE  FILE exists.
+* -r FILE  FILE exists and the read permission is granted.
+* -s FILE  FILE exists and it's size is greater than zero (ie. it is not empty).
+* -w FILE  FILE exists and the write permission is granted.
+* -x FILE  FILE exists and the execute permission is granted.
+
+### If Else:
+
+```
+if [ <some test> ]
+then
+	<commands>
+else
+	<other commands>
+fi
+```
+
+### If Elif Else:
+
+```
+if [ <some test> ]
+then
+	<commands>
+elif [ <some test> ]
+then
+	<different commands>
+else
+	<other commands>
+fi
+```
+
+### Case Statements:
+
+```
+case <variable> in
+<pattern 1>)
+	<commands>
+	;;
+<pattern 2>)
+	<other commands>
+	;;
+esac
+```
+
+# Loops
+
+For loops
+
+For each item within a specified list, execute the provided set of instructions using the following syntax.
+
+```
+for var in <list>
+do
+	<commands>
+done
+```
+
+Functions
+
+```
+function_name () {
+	<commands>
+}
+```
+
+OR
+
+```
+function function_name {
+	<commands>
+}
+```
+
+# Variable Scope
+
+The term "scope" pertains to the sections of a script that have visibility of particular variables. By default, a variable is considered to be global.
+
+`local var_name=<var_value>`
