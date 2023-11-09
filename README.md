@@ -261,3 +261,9 @@ function function_name {
 	<commands>
 }
 ```
+
+# Variable Scope
+
+The term "scope" pertains to the sections of a script that have visibility of particular variables. By default, a variable is considered to be global.
+
+`local var_name=<var_value>`
