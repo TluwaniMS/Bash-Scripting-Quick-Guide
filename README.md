@@ -118,3 +118,45 @@ To achieve this, we employ the variables `$1` to denote the first command line a
 * $SECONDS - The number of seconds since the script was started.
 * $RANDOM - Returns a different random number each time is it referred to.
 * $LINENO - Returns the current line number in the Bash script.
+
+# User input
+
+If we desire to request input from the user, we utilize a command known as "read." This command accepts the input and stores it in a variable.
+
+e.g 
+
+`read <options> <var_name>`
+
+You have the capability to modify how the read function operates by utilizing a range of command line choices.
+
+Nevertheless, two frequently employed choices are -p, which enables you to designate a prompt, and -s, which ensures that the input is silent.
+
+`read -p “Username: ”<var_name>`
+
+`read -sp “Password: ”<var_name>`
+
+# Let
+
+The "let" command in Bash is a built-in function that enables us to perform basic arithmetic operations.
+
+`let <arithmetic expression>`
+
+e.g
+
+`let <var_name>=x+x`
+
+ OR
+ 
+`let “<var_name> = x + x”`
+
+# Expr
+
+expr is akin to let, but instead of storing the outcome in a variable, it directly displays the answer.
+
+Double Parentheses
+
+`$(( expression ))`
+
+e.g
+
+`<var_name>=$(( x + x ))`
