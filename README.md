@@ -195,7 +195,7 @@ fi
 * -w FILE  FILE exists and the write permission is granted.
 * -x FILE  FILE exists and the execute permission is granted.
 
-### If Else
+### If Else:
 
 ```
 if [ <some test> ]
@@ -206,7 +206,7 @@ else
 fi
 ```
 
-### If Elif Else
+### If Elif Else:
 
 ```
 if [ <some test> ]
@@ -218,4 +218,17 @@ then
 else
 	<other commands>
 fi
+```
+
+### Case Statements:
+
+```
+case <variable> in
+<pattern 1>)
+	<commands>
+	;;
+<pattern 2>)
+	<other commands>
+	;;
+esac
 ```
